@@ -1,2 +1,8 @@
 # Customer_Churn
 The GitHub repository offers a thorough feature engineering and preprocessing pipeline for a machine learning task with a churn prediction focus. The first step in data preparation is to handle missing values and transform the 'TotalCharges' column to numeric values. Next, binary values are created from the 'Churn' column, mapping 'No' to 0 and 'Yes' to 1. A random state of 1 is used to split the dataset into an 80-20 train-test split, and certain features—both numerical and categorical—are chosen for analysis. OneHotEncoder is used for one-hot encoding of categorical features and StandardScaler is used for scaling numerical features in feature engineering. Using pd.concat, the final features are combined into test and train sets. Additional examples of machine learning model training in the repository include Random Forest, Extra Trees, XGBoost, and LightGBM. The provided pipeline serves as a robust foundtion for predictive modelling in churn prediction scenarios. 
+
+C_Predict:
+
+Dabbled into a multi-modal customer churn prediction system that highlights and implements behavioural sequences (Time-series engagement patterns), Self-Supervised learning; SimCLR inspired contrastive learning for behavioural embeddings, Tim2Vec temporal encoding for capturing time-aware patterns, and unsupervised pretraining on behavioural sequence.
+Utillized a temporal transformer with multi-head attention for sequential modeling.
+Evaluation metrics include ; ROC-AUC, F1, Precision, Recall (traditional metrics). Others include Precision@K (for targeting top at risk customers), Business metrics(expected revenue loss, cost reduction from interventions). 
